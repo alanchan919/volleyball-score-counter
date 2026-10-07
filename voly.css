@@ -1,0 +1,88 @@
+.board { 
+    position: relative; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    height: 100vh; 
+    height: 100dvh;
+}
+.side { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    cursor: pointer;
+ }
+#sideA { 
+    background: #cc2020; 
+}
+#sideB { 
+    background: #3a9ab0; }
+.score { 
+    font-size: 12rem; 
+}
+.sets { 
+    position: absolute; 
+    top: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: white; 
+    font-size: 3rem; 
+}
+.bar { 
+    position: absolute; 
+    bottom: 20px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: flex-end; 
+    color: white; 
+}
+
+.overlay { 
+    position: fixed; 
+    inset: 0; 
+    background: rgba(0, 0, 0, 0.7); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    z-index: 10; 
+}
+.hidden { 
+    display: none; 
+}
+
+.popup {
+  background: #333;
+  color: white;
+  padding: 3rem 4rem;
+  min-width: 60%;
+  border-radius: 16px;
+  text-align: center;
+}
+.popup h2 { 
+    font-size: 3rem; 
+    margin-bottom: 1.5rem; }
+.popup button { 
+    font-size: 1.5rem; 
+    padding: 0.8rem 2rem; 
+    margin: 0.5rem; 
+    cursor: pointer; 
+}
+
+.buttons { 
+    margin-left: auto; 
+}
+
+#winnerarrow {
+  font-size: 15rem;
+}
+
+#winnerlabel{
+  font-size: 3rem;
+  display: block;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}

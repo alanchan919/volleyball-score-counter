@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="voly.css">
+  <title>Volleyball Scoreboard</title>
+</head>
+<body>
+  <div class="board">
+    <div class="side" id="sideA">
+      <div class="score" id="scoreA">0</div>
+      <div class="name" id="nameA">Team 1</div>
+    </div>
+    <div class="side" id="sideB">
+      <div class="score" id="scoreB">0</div>
+      <div class="name" id="nameB">Team 2</div>
+    </div>
+
+    <div class="sets">
+      <span id="setA">0</span>
+      <span id="serve">◀</span>
+      <span id="setB">0</span>
+    </div>
+
+    <div class="bar">
+      <div>
+        <button class="buttons" id="Reset">Reset</button>
+      </div>
+    </div>
+  </div>
+ <div id="winPopup" class="overlay hidden">
+  <div class="popup">
+    <div class="winnerrow">
+  <span id="winnerarrow"></span>
+  <span id="winnerlabel">Winner</span>
+</div>
+    <h2 id="winText"></h2>
+    <button id="nextSet">Next set</button>
+  </div>
+</div>
+
+<div id="servePopup" class="overlay">
+  <div class="popup">
+    <h2>Who serves first?</h2>
+    <button id="serveA">Team 1</button>
+    <button id="serveB">Team 2</button>
+  </div>
+</div>
+
+  <script src="voly.js"></script>
+</body>
+</html>

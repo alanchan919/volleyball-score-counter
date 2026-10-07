@@ -1,0 +1,13 @@
+{
+  "name": "Volleyball Scoreboard",
+  "short_name": "Voly",
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#333333",
+  "theme_color": "#cc2020",
+  "icons": [
+    { "src": "volypg.jpeg", "sizes": "192x192", "type": "image/jpeg" },
+    { "src": "volyppg.jpeg", "sizes": "512x512", "type": "image/jpeg" }
+  ]
+}
